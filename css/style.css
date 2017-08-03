@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: Lato, sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    color: #444;
+    background-color: #2a2a2a;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+svg {
+    width: auto;
+    height: 100vh;
+}
+circle {
+    width:5vh;
+    height:5vh;
+    position:absolute;
+    z-index:8;
+    display:block;
+    stroke-width:5px;
+    stroke:rgba(255, 255, 255, .9);
+    fill: rgba(240, 0, 0, .8);
+    animation-name: stretch;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes stretch {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.pin-form {
+    display: none;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -150px;
+    z-index: 4;
+    background: rgba(255, 255, 255, .9);
+}
+.pin-form fieldset {
+    padding: 10px 0;
+    border-radius: 10px;
+}
+.pin-form textarea {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.pin-form input {
+    display: block;
+    width: 80%;
+    height: 34px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin-right: 5px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin-left: 5px;
+}
+.pin-confirm {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+}
+.pin-confirm > div{
+    position: absolute;
+}
+.pin-confirm a{
+    display: block;
+    width: 50px;
+    margin: 0 0 10px 0;
+}
+
+ .pin-confirm-succes {
+   display:none;
+   width:100%;
+   height:100%;
+   position: absolute;
+   z-index:7;
+   left:0;
+   top:0;
+   text-align:center;
+   background: rgba(0, 0, 0, .4);
+   
+}
+.pin-confirm-succes a {
+    padding:20px;
+    margin: 150px 0 10px 0;
+  
+}
