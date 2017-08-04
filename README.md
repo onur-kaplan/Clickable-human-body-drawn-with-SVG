@@ -7,4 +7,6 @@ An alternative web application for doctors who want to record the condition of t
 - Each organ or spot can be activated or deactivated individually.
 - SVG (Scalable Vector Graphics) based, so it can be enlarged to any size up to preserving the quality.
 
+![](https://raw.githubusercontent.com/tr36/Clickable-human-body-drawn-with-SVG/master/human-body.gif)
+
 Live Demo: https://codepen.io/tr36/pen/XaWeNK
